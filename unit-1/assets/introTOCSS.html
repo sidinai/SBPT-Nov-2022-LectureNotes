@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./introTOCSS.css">
+    <title>Intro to CSS</title>
+</head>
+
+<body>
+    <!--
+    Box Model:
+      - Content: the element/tag
+      - Padding: space around content
+      - Border: "frame" around padding
+      - Margin: space around border
+
+    The sum of all equal the total element size:
+    c + p + b + m = total element size
+    -->
+
+    <nav>
+        <!-- ?Quick Key: Cmd + D: selects multi-lines
+        ? Ctrl + u unselects
+        -->
+        <a href="#home" class="btn" id="home" style="color: blue;">home</a>
+        <a href="#news" class="btn">news</a>
+        <a href="#contact" class="btn">contact</a>
+        <a href="#about" class="btn">about</a>
+    </nav>
+    <div>
+        <!-- #test-div.paragraph + tab = below line-->
+        <div id="test-div" class="paragraph">
+            <h3>header 3</h3>
+            <p>sample info 1</p>
+        </div>
+        <div class="paragraph">
+            <h3>Header 2</h3>
+            <p>Sample info 2</p>
+            Sample info inside of div
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!--
+h3.test = below line
+<h3 class="test"></h3> -->
