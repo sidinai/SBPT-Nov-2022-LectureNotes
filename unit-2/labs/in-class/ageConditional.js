@@ -19,3 +19,17 @@ if (age <= 17) {
 } else if (age >= 25) {
     console.log("You can rent a car!")
 }
+
+if (age <= 17) {
+    console.log("Sorry, you're too young to do anything.")
+} else {
+    if (age >= 18) {
+        console.log("You can vote!")
+    }
+    if (age >= 21) {
+        console.log("You can drink!")
+    }
+    if (age >= 25) {
+        console.log("You can rent a car!")
+    }
+}

@@ -94,3 +94,110 @@ if (grade > 75) {
 } else {
     console.log('Failing');
 }
+
+// ! Switch
+/*
+keywords:
+    - switch
+    - case
+    - break
+        - takes us out of our code block
+    - default
+        - run if no cases match
+
+Structure:
+
+switch(expression){
+    case ... :
+        return;
+        break;
+    case ... :
+        return;
+        break;
+    case ... :
+        return;
+        break;
+    default:
+        return;
+}
+*/
+
+let officeCharacter = "Jim";
+
+switch (officeCharacter) {
+    case "Michael":
+        console.log("My mind is going a mile an hour");
+        break;
+    case "Dwight":
+        console.log("Perfectenschlag");
+        break;
+    case "Jim":
+        console.log("Bears. Beets. Battlestar Galactice");
+        break;
+    default:
+        console.log(`I'm sorry, ${officeCharacter}, but do I know you?`);
+}
+
+let num = 5;
+
+switch (true) {
+    case (num < 0 && num > -10):
+        console.log('case 1 ran')
+        break;
+    case (num > 0):
+        console.log('case 2 ran');
+        break;
+    default:
+        console.log('did not work');
+        break;
+}
+
+// ! Ternary
+/*
+Always an if/else condition at minimum.
+
+Structure:
+expression ? true : false;
+*/
+
+// let expression = true;
+// let expression = false;
+
+// if (true) {
+//     console.log('Runs true');
+// } else {
+//     console.log("Runs False");
+// }
+
+// expression ? consolee.log('runs true') : console.log('runs false');
+
+let newerNum = 6;
+newerNum > 0 ? console.log('yes') : console.log('no');
+
+// as an if/else
+if (newerNum > 0) {
+    console.log('yes');
+} else {
+    console.log('no');
+}
+
+//* Else/If
+if (newerNum == 0) {
+    console.log('Hello');
+} else if (newerNum < 0) {
+    console.log('hi');
+} else {
+    console.log('goodbye');
+}
+
+(newerNum === 0) ?
+console.log('Hello'):
+    console.log(newerNum < 0) ?
+    console.log('hi') :
+    console.log('goodbye again');
+
+
+let numOne = 3;
+let numTwo = 2;
+let value = ((numOne + numTwo) > 1) ? (numOne + numTwo) : 0;
+console.log(value);

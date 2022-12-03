@@ -1,12 +1,27 @@
-#keypad {
+        /* #keypad {
     display: grid;
-    grid-template: repeat(8, 12.5%) / repeat(10, 10%);
-}
-
-div .key {
-    border: 1px solid black;
-    background: slategray;
-    font-size: xx-large;
-    color: whitesmoke;
-    text-align: center;
-}
+    grid-template: repeat(10, 10vh) / repeat(10, 10%);
+    grid-template-areas: "column1 column1 column1"
+} */
+        
+        body {
+            display: grid;
+            grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+            height: 100vh;
+            margin: 0;
+        }
+        
+        #keypad {
+            display: grid;
+            grid-template: repeat(4, 25%) / repeat(3, 1fr);
+            text-align: center;
+            grid-area: 2 / 2 / span 3 / span 2;
+        }
+        
+        div .key {
+            border: 1px solid black;
+            background: slategray;
+            font-size: xx-large;
+            color: whitesmoke;
+            text-align: center;
+        }
