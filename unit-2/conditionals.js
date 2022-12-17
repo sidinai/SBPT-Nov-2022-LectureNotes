@@ -182,17 +182,16 @@ if (newerNum > 0) {
 }
 
 //* Else/If
-if (newerNum == 0) {
-    console.log('Hello');
-} else if (newerNum < 0) {
-    console.log('hi');
-} else {
-    console.log('goodbye');
-}
+// if (newerNum == 0) {
+//     console.log('Hello');
+// } else if (newerNum < 0) {
+//     console.log('hi');
+// } else {
+//     console.log('goodbye');
+// }
 
-(newerNum === 0) ?
-console.log('Hello'):
-    console.log(newerNum < 0) ?
+(newerNum === 5) ?
+console.log('Hello'): console.log(newerNum > 0) ?
     console.log('hi') :
     console.log('goodbye again');
 

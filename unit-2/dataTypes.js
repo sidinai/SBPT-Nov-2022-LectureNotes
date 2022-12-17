@@ -27,7 +27,7 @@ console.log(degrees);
 let precise = 999999999999999; // 15 9s
 console.log(precise);
 
-let rounded = 9999999999999999; // 16 9s
+let rounded = 9999999999999999; // rounds up at 16 digits
 console.log(rounded); // JS gives us space for 15 9s before it rounds up.
 
 let notQuite = 0.2 + 0.1;
@@ -130,3 +130,4 @@ let soup = {
 let days = ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun', ];
 
 console.log(days.toString());
+console.log((false + 8))
